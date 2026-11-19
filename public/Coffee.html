@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visha Brews</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f5ef;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #30201c;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e6b86a;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e6b86a;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            background-color: #9b4936;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .welcome h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            color: #f5dfb5;
+        }
+
+        /* Coffee Menu */
+        .menu {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .menu h2 {
+            color: #49352e;
+            margin-bottom: 40px;
+        }
+
+        .coffee-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .coffee {
+            width: 180px;
+            padding: 15px;
+        }
+
+        .coffee .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .coffee h3 {
+            color: #49352e;
+            margin-bottom: 12px;
+        }
+
+        .coffee p {
+            color: gray;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #b38b4d;
+            font-weight: bold;
+        }
+
+        /* Special Offer */
+        .offer {
+            background-color: #f0dcae;
+            text-align: center;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .offer h2 {
+            color: #49352e;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .offer p {
+            color: #8c7659;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #35252e;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .welcome h1 {
+                font-size: 24px;
+            }
+
+            .coffee-container {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Visha Brews ☕</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h1>WELCOME TO Visha Brews</h1>
+        <p>Fresh Coffee, Happy Moments!</p>
+    </section>
+
+    <!-- Coffee Menu -->
+    <section class="menu">
+        <h2>OUR COFFEE MENU</h2>
+
+        <div class="coffee-container">
+
+            <div class="coffee">
+                <div class="icon">☕</div>
+                <h3>Cappuccino</h3>
+                <p>Rich and creamy coffee</p>
+                <div class="price">₹149</div>
+            </div>
+
+            <div class="coffee">
+                <div class="icon">🥤</div>
+                <h3>Cold Coffee</h3>
+                <p>Chilled and refreshing</p>
+                <div class="price">₹179</div>
+            </div>
+
+            <div class="coffee">
+                <div class="icon">🍫</div>
+                <h3>Chocolate Mocha</h3>
+                <p>Chocolate coffee delight</p>
+                <div class="price">₹189</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="offer">
+        <h2>SPECIAL OFFER!</h2>
+        <p>Buy 2 Coffees & Get 10% OFF</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>GOOD COFFEE. GOOD MOOD. GOOD DAY</p>
+    </footer>
+
+</body>
+</html>
